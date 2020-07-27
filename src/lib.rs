@@ -6,3 +6,12 @@ pub fn say(s: &str) -> String {
   let r = String::from("hello ");
   return r + s;
 }
+
+pub fn fib(n: u32) -> u32 {
+    match n {
+        0 => 1,
+        1 => 1,
+        _ => fibonacci(n - 1) + fibonacci(n - 2),
+    }
+ return n
+}
